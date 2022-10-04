@@ -6,8 +6,6 @@ const bot = new TelegramApi(token, {polling: true});
 // аналог БД, где ключ - это ID чата, а зн-е - загаданное ботом число
 const chats = {}
 
-
-
 const startGame = async (chatId) => {
   await bot.sendMessage(chatId, `Сейчас я загадаю цифру от 0 до 9, попробуй угадать!`, gameOptions)
 
